@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Censo Familiar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Censo Familiar</h2>
+  <form id="familyForm" action="insert.php" method="POST">
+    <label>Nombre de la familia:</label>
+    <input type="text" name="familyName" required>
+
+    <div id="membersContainer"></div>
+
+    <button type="button" onclick="addMember()">Agregar miembro</button>
+    <button type="submit">Guardar</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
